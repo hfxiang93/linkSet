@@ -1,0 +1,16 @@
+* text=auto eol=lf
+
+*.ts text
+*.tsx text
+*.js text
+*.jsx text
+*.css text
+*.html text
+*.json text
+
+# Keep emoji and icons as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg text

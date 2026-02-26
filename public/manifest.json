@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "LinkSet - 链接聚合页",
+    "version": "0.1.0",
+    "description": "以图标+名称展示常用链接，支持导入浏览器书签、搜索、编辑与主题定制。",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": [
+        "bookmarks",
+        "storage",
+        "contextMenus",
+        "activeTab",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://www.google.com/*"
+    ],
+    "action": {
+        "default_title": "LinkSet",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    }
+}
